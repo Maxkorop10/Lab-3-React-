@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Palette_page = (props) => {
 
-    const {paletteName = "string"} = props
+    const {paletteName = "string"} = props;
     const current_palette = Palettes_list.find((palette) => palette.paletteName === paletteName);
     const colors = current_palette.colors;
 
@@ -69,7 +69,7 @@ const Palette_page = (props) => {
             )}
 
         </div>
-    )
+    );
 }
 
 export default Palette_page;

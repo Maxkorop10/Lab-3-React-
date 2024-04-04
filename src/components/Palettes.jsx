@@ -21,7 +21,7 @@ const Palettes = (props) => {
                 <span role='img' aria-label='palette' className='text-right block mt-[-40px]'>{current_palette.emoji}</span>
             </a>
         </div>
-    )
+    );
 }
 
 export default Palettes;
