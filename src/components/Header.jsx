@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <div className="block w-[1024px] text-left relative h-[75px] box-border mb-[15px]">
             <div className="!w-full flex content-center justify-center float-left h-[105px]">
-                <h1 className="absolute left text-[24px] text-[#fff] left-[2px] bottom-[5px] tracking-[2.5px] font-bold mt-[20px] text-left w-[63%]">FLAT UI COLORS 2</h1>
+                <h1 className="absolute left text-[24px] text-[#fff] left-[2px] bottom-[5px] tracking-[2.5px] font-bold mt-[20px] text-left w-[250px] cursor-pointer">FLAT UI COLORS 2</h1>
 
                 <div className="absolute right-[0] ml-[40px] bottom-[5px] mr-[2px] tracking-[1px]">
 
