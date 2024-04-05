@@ -56,12 +56,12 @@ const Palette_page = (props) => {
             </div>
 
             {baseColor && (
-                <div style={{ backgroundColor: baseColor.color, position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 999 }}>
-                    <div className="absolute w-screen h-[240px] text-white bg-[rgba(255,_255,_255,_0.15)] top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 text-center text-[36px] items-center">
-                        <h1 className="text-[80px] font-semibold drop-shadow-2xl justify-center">Right One!</h1>
-                        <div className="drop-shadow-lg">
-                            <h2>{baseColor.name.toUpperCase()}</h2>
-                            <p>{baseColor.color}</p>
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+                    <div style={{ background: baseColor.color }} className="w-full h-full flex flex-col justify-center items-center">
+                        <div className="absolute w-screen h-[190px] text-white bg-[rgba(255,_255,_255,_0.15)]">
+                            <h1 className="text-[80px] font-semibold drop-shadow-2xl justify-center">Right One!</h1>
+                            <h2 className="drop-shadow-lg">{baseColor.name.toUpperCase()}</h2>
+                            <p className="drop-shadow-lg">{baseColor.color}</p>
                         </div>
                     </div>
                 </div>
