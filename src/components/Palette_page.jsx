@@ -12,7 +12,6 @@ const Palette_page = (props) => {
 
     const [copiedBlock, setCopiedBlock] = useState(new Set());
     const [hoverBlock, setHoverBlock] = useState(null);
-    const [clickBlock, setClickBlock] = useState(null);
     const [baseColor, setBaseColor] = useState(null);
 
     const Copy_color = (color) => {
@@ -45,8 +44,8 @@ const Palette_page = (props) => {
                                 {hoverBlock === color.color && !copiedBlock.has(color.color) && (
                                 <div className="border-[2px] border-[solid] border-[white] bg-[rgba(0,_0,_0,_0.1)] text-[#fff] text-[21px] rounded-[4px] flex justify-center items-center w-full h-full">
                                     COPY
-                                </div> )} {clickBlock === color.color}
-                            <div className="absolute bottom-[0px] right-[0px] mr-[10px] p-[4px] text-[20px] uppercase font-semibold" style={{ color:(color.color==="#fff")?'#c9c1c6':'#fff'}}>{color.name}</div>
+                                </div> )}
+                            <div className="absolute text-white bottom-[0px] right-[0px] mr-[10px] p-[4px] text-[20px] uppercase font-semibold">{color.name}</div>
                         </div>
                     </CopyToClipboard>
                 ))}
@@ -57,7 +56,7 @@ const Palette_page = (props) => {
             </div>
 
             {baseColor && (
-                <div className="modal" style={{ backgroundColor: baseColor.color, position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 999 }}>
+                <div style={{ backgroundColor: baseColor.color, position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 999 }}>
                     <div className="absolute w-screen h-[240px] text-white bg-[rgba(255,_255,_255,_0.15)] top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 text-center text-[36px] items-center">
                         <h1 className="text-[80px] font-semibold drop-shadow-2xl justify-center">Right One!</h1>
                         <div className="drop-shadow-lg">
