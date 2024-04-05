@@ -39,8 +39,7 @@ const Palette_page = (props) => {
                     <CopyToClipboard key={index} text={color.color} onCopy={() => Copy_color(color)}>
                         <div className="relative cursor-pointer" style={{backgroundColor: color.color}}
                             onMouseEnter = {() => setHoverBlock(color.color)}
-                            onMouseLeave = {() => setHoverBlock(null)}
-                            onClick = {() => setClickBlock(color.color)}>
+                            onMouseLeave = {() => setHoverBlock(null)}>
                                 {hoverBlock === color.color && !copiedBlock.has(color.color) && (
                                 <div className="border-[2px] border-[solid] border-[white] bg-[rgba(0,_0,_0,_0.1)] text-[#fff] text-[21px] rounded-[4px] flex justify-center items-center w-full h-full">
                                     COPY
@@ -51,7 +50,7 @@ const Palette_page = (props) => {
                 ))}
             </div>
 
-            <div className="text-[36px] text-[black] text-[16px] px-2.5 left-[2px] bottom-[5px] tracking-[2.5px] font-medium font-black text-right">
+            <div className="text-[black] text-[16px] px-2.5 left-[2px] bottom-[5px] tracking-[2.5px] font-medium font-black text-right">
                 {current_palette.paletteName}
             </div>
 
